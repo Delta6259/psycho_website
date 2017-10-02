@@ -17,6 +17,19 @@
 }
 
 .img-responsive {
-  width: 17%;
-  height: 17%;
+  width: 240px;
+  height: 240px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.subtitle-home {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.title {
+  margin-left: 40px;
+  margin-right: 40px;
 }

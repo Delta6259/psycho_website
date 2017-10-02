@@ -1,15 +1,31 @@
 <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://i.pinimg.com/originals/bf/d9/7e/bfd97ec54f10cb2afdc4961f7f39ab89.jpg');">
   <div class="banner-content">
-    <h1>Cabinet de psychologie</h1>
+    <div class ="title"><h1>Cabinet de psychologie</h1></div>
     <p>Cynthia Cheroutre et Sophie Derenoncourt</p>
     <p>Psychologues</p>
-    <img src="images/portrait_1.jpg" class="img-responsive" alt="Cynthia Cheroutre">
+    <img src="images/portrait_1.jpg" class="img-responsive" alt="Cynthia Cheroutre" id="cynthia">
+    <h5><i>" Le meilleur est à venir "</i></h5>
   </div>
 </div>
+<div class="container">
+  <h2 class="subtitle-home">Notre philosophie</h2>
+    <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+  <h2 class="subtitle-home">Notre manière de travailler</h2>
+    <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+</div>
 
-<p class="h2">Notre philosophie</p>
-<p class="h2">Notre manière de travailler</p>
 
+<script>
+$("#cynthia").click(function() {
+  $( "#cynthia" ).effect( "shake" );
+});
+
+$(".subtitle-home").hover(function(){
+    $(this).css("background-color", "MistyRose");
+    }, function(){
+    $(this).css("background-color", "white");
+});
+</script>
 
 
 
