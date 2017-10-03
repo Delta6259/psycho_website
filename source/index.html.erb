@@ -3,43 +3,32 @@
     <div class ="title"><h1>Cabinet de psychologie</h1></div>
     <p>Cynthia Cheroutre et Sophie Derenoncourt</p>
     <p>Psychologues</p>
-    <img src="images/portrait_1.jpg" class="img-responsive" alt="Cynthia Cheroutre" id="cynthia">
-    <h5><i>" Le meilleur est à venir "</i></h5>
+    <img src="images/portrait_1.jpg" class="img-responsive"  alt="L'equipe" id="cynthia">
+    <!-- <h5><i>" Le meilleur est à venir "</i></h5> -->
   </div>
 </div>
 <div class="container">
-  <h2 class="subtitle-home">Notre philosophie</h2>
-    <img src="images/cerveau.png" class="img-responsive" alt="Notre philosophie" id="cerveau">
-    <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-  <h2 class="subtitle-home">Notre manière de travailler</h2>
-  <img src="images/mister-heureux.jpg" class="img-responsive" alt="Notre manière de travailler" id="heureux">
-    <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+  <h2 class="subtitle-home">Qui sont-elles ?</h2>
+  <img src="images/cerveau.png" class="img-responsive" alt="Notre philosophie" id="cerveau">
+    <div class="presentation"><p>Cynthia et Sophie sont diplômées du Master en psychologie clinique  des interventions cognitives et comportementales, éducatives et sociales de l’université de Lille 3. Elles sont également formées à l’éducation thérapeutique du patient (ETP), à la thérapie pleine conscience. Elles sont également sensibilisées à la thérapie ACT (Acceptation et Engagement). Elles consultent également au CHRU de Lille et GHICL (Hôpital de Saint Philibert). </p>
+  </div>
 </div>
-
 
 <script>
 $("#cynthia").click(function() {
-  $( "#cynthia" ).effect( "shake" );
+$( "#cynthia" ).effect( "shake" );
 });
-
 $(".subtitle-home").hover(function(){
-    $(this).css("background-color", "MistyRose");
-    }, function(){
-    $(this).css("background-color", "white");
+$(this).css("background-color", "MistyRose");
+}, function(){
+$(this).css("background-color", "white");
 });
-
 $(".banner-content").hover(function(){
-    $(this).css("opacity", 1 );
-    }, function(){
-    $(this).css("opacity", 0.85);
+$(this).css("opacity", 1 );
+}, function(){
+$(this).css("opacity", 0.85);
 });
 </script>
-
-
-
-
 <!--
-   image_tag "logo.png", width: "200"
-
-      link_to "More about this template", "about.html"  -->
-
+image_tag "logo.png", width: "200"
+link_to "More about this template", "about.html"  -->
