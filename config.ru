@@ -17,7 +17,7 @@ use Rack::TryStatic,
     :urls => %w[/],
     :try => ['.html', 'index.html', '/index.html']
 
-Serve a 404 page if all else fails
+# Serve a 404 page if all else fails
 run lambda { |env|
   [
     404,
