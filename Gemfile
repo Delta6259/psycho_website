@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
+ruby '2.3.4'
 
+gem 'middleman-gh-pages'
 gem 'rake'
 gem 'puma'
 gem 'rack-contrib'
