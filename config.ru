@@ -14,8 +14,8 @@ end
 # Attempt to serve static HTML files
 use Rack::TryStatic,
     :root => "build",
-    :urls =>  ['/index.html', '/about.html', '/pratiques.html']
-
+    :urls => %w[/],
+    :try => ['.html', 'index.html', '/index.html', '/about.html', '/pratiques.html']
 
 # Serve a 404 page if all else fails
 run lambda { |env|
