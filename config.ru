@@ -17,6 +17,16 @@ use Rack::TryStatic,
     :urls => %w[/],
     :try => ['.html', 'index.html', '/index.html']
 
+use Rack::TryStatic,
+    :root => "build",
+    :urls => %w[/],
+    :try => ['.html', 'about.html', '/about.html']
+
+use Rack::TryStatic,
+    :root => "build",
+    :urls => %w[/],
+    :try => ['.html', 'pratiques.html', '/pratiques.html']
+
 # Serve a 404 page if all else fails
 run lambda { |env|
   [
