@@ -1,6 +1,17 @@
 <div class="container">
-  <h2 class="subtitle-home">Nos coordonées</h2>
-  <div class="coordonées"><p> Cabinet de psychologie, 4 rue Courmont, 59000 Lille</p></div>
-  <div class="tel"><p> 06.15.56.57.65</p></div>
+  <h2 class="subtitle-home" id="subtitle-about">Nos coordonées</h2>
+  <div class="ensemble-coordonées">
+    <div class="coordonées"><p> Cynthia Cheroutre : 06.15.56.57.65 </p></div>
+    <div class="coordonées"><p> Sophie Derenoncourt : 06.64.89.45.28 </p></div>
+    <div class="coordonées"><p> Secrétariat : 03.20.86.06.50</p></div>
+  </div>
   <%= partial "map" %>
 </div>
+
+<script>
+  $(".subtitle-home").hover(function(){
+  $(this).css("background-color", "MistyRose");
+  }, function(){
+  $(this).css("background-color", "white");
+  });
+</script>
