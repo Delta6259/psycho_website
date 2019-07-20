@@ -1,0 +1,60 @@
+<header class="navbar navbar-sticky">
+  <!-- Search-->
+  <div class="site-branding">
+    <div class="inner">
+      <!-- Site Logo-->
+        <%= link_to root_path, class: "site-logo" do %>
+          <%= image_tag "logo_blue.png" %>
+        <% end %>
+    </div>
+  </div>
+
+  <!-- Right Navbar -->
+
+  <% if user_signed_in? %>
+
+    <!-- Avatar - Dropdown-->
+
+    <div class="toolbar">
+      <div class="inner">
+        <div class="tools">
+          <ul class="nav nav-pills justify-content-end">
+            <li class="nav-item">
+              <%= link_to profile_path, class: 'btn btn-link-primary' do %>
+                <i class="icon-heart"></i> <%= "My wishlist" %>
+              <% end %>
+            </li>
+
+            <li class="nav-item">
+              <div class="account"><a href="#"></a>
+              <% avatar_url = current_user.facebook_picture_url || "https://lelakisihat.com/wp-content/uploads/2016/09/avatar.jpg" %>
+              <%= image_tag avatar_url, class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+                <ul class="toolbar-dropdown">
+                  <li>
+                    <%= link_to destroy_user_session_path, method: :delete do %>
+                      <i class="icon-unlock"></i>  <%= t(".sign_out", default: "Se déconnecter") %>
+                    <% end %>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <% else %>
+
+      <!-- Login link (when logged out) -->
+
+    <div class="toolbar">
+      <div class="inner">
+        <div class="tools">
+          <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "menu_login" %>
+          <%= link_to t(".sign_in", default: "Signin"), new_user_registration_path, class: "menu_login" %>
+        </div>
+      </div>
+    </div>
+
+    <% end %>
+
+</header>
