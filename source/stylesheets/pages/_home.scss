@@ -43,6 +43,12 @@ body {
   border-radius: 50%;
 }
 
+.img-responsive-without-radius {
+  width: 300px;
+  height: 300px;
+  margin: 15px;
+}
+
 .img-home {
   display: flex;
   justify-content: center;
